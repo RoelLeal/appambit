@@ -131,7 +131,7 @@ test.startSession(
 }
 ```
 
-### Handling custom headers
+### ⚙️Handling custom headers
 
 The library allows adding custom HTTP headers to requests:
 
