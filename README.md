@@ -32,21 +32,28 @@ The Android library for interacting with the Appambit API. This library provides
 1. Download the `appambit-debug.aar` or `appambit-release.aar` file.
 2. Place the file in the `libs` directory of your project.
 3. Add the following dependency in your `build.gradle` file at module level:
-
+```
 dependencies {
     implementation(files("../libs/appambit-debug.aar"))
     implementation("com.google.android.material:material:1.12.0")
 }
+```
 
 ### Second Option: Using the library module
 
 1. Add the library module to your project
 2. Include the module in your `settings.gradle` file:
-
+```
 include ':app', ':appambit'
-
+```
 Add the dependency in your `build.gradle` file at module level:
-
+```
 dependencies {
     implementation(project(":appambit"))
 }
+```
+## Library usage
+
+### Storing a consumer
+
+To store a consumer and obtain a token:
