@@ -11,7 +11,7 @@ The Android library for interacting with the Appambit API. This library provides
 - [Library usage](#library-usage)
 
 - [Store a consumer](#storing-a-consumer)
-- [Start a session](#logginin)
+- [Start a session](#loggin-in)
 - [Handling custom headers](#handling-custom-headers)
 
 - [Running the demo-application](#running-the-demo-application)
