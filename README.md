@@ -10,8 +10,8 @@ The Android library for interacting with the Appambit API. This library provides
 - [Installation](#installation)
 - [Library usage](#library-usage)
 
-- [Store a consumer](#store-a-consumer)
-- [Start a session](#start-a-session)
+- [Store a consumer](#storing-a-consumer)
+- [Start a session](#logginin)
 - [Handling custom headers](#handling-custom-headers)
 
 - [Running the demo-application](#running-the-demo-application)
@@ -128,6 +128,23 @@ test.startSession(
             println("Error: ${error.message}")
         }
     )
+}
+```
+
+### Handling custom headers
+
+The library allows adding custom HTTP headers to requests:
+
+```
+val headers = mapOf(
+    "Authorization" to "Bearer $token",
+    "X-App-Version" to "1.0.0",
+    "X-Device-Type" to "Android",
+    "X-Custom-Header" to "Custom-Value"
+)
+
+test.storeConsumer(consumerJson, headers) { result ->
+    // Handle result
 }
 ```
 
