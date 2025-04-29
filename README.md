@@ -11,10 +11,10 @@ The Android library for interacting with the Appambit API. This library provides
 - [Library usage](#library-usage)
 
 - [Store a consumer](#storing-a-consumer)
-- [Start a session](#loggin-in)
+- [Start a session](#logging-in)
 - [Handling custom headers](#handling-custom-headers)
 
-- [Running the demo application](#running-the-demo-application)
+- [Running the demo application](#how-to-run-the-demo-application)
 
 ## 📌Requirements
 - Android SDK minimum: API 26 (Android 8.0 Oreo) 🍪
@@ -148,7 +148,7 @@ test.storeConsumer(consumerJson, headers) { result ->
 }
 ```
 
-## ▶️Running the demo application
+## ▶️How to run the demo application
 
 The demo application shows how to use the appambit library in a real project.👨‍💻
 
