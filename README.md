@@ -35,7 +35,6 @@ The Android library for interacting with the Appambit API. This library provides
 ```
 dependencies {
     implementation(files("../libs/appambit-debug.aar"))
-    implementation("com.google.android.material:material:1.12.0")
 }
 ```
 
