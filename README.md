@@ -1,10 +1,10 @@
+### Appambit Android Library📱
+
+The Android library for interacting with the Appambit API. This library provides a simple way to perform operations such as storing consumers and initiating sessions via HTTP POST requests.🚀
+
 ### Appambit Android Library
 
-The Android library for interacting with the Appambit API. This library provides a simple way to perform operations such as storing consumers and initiating sessions via HTTP POST requests.
-
-### Appambit Android Library
-
-## Index
+## 📋Index
 
 - Requirements](#requirements)
 - Installation](#installation)
@@ -16,14 +16,14 @@ The Android library for interacting with the Appambit API. This library provides
 
 - Running the demo-application](#running-the-demo-application)
 
-## Requirements
-- Android SDK minimum: API 26 (Android 8.0 Oreo)
-- Java 8 or higher
-- Kotlin 1.8 or higher
+## 📌Requirements
+- Android SDK minimum: API 26 (Android 8.0 Oreo) 🍪
+- Java 8 or higher ☕
+- Kotlin 1.8 or higher 🅚
 
-## Installation
+## 📥Installation
 
-### First Option: Using the AAR file
+### First Option: Using the AAR file 📦
 
 1. Download the `appambit-debug.aar` or `appambit-release.aar` file.
 2. Place the file in the `libs` directory of your project.
@@ -34,7 +34,7 @@ dependencies {
 }
 ```
 
-### Second Option: Using the library module
+### Second Option: Using the library module 🧩
 
 1. Add the library module to your project
 2. Include the module in your `settings.gradle` file:
@@ -47,7 +47,7 @@ dependencies {
     implementation(project(":appambit"))
 }
 ```
-## Library usage
+## 📚Library usage
 
 ### Storing a consumer
 
@@ -95,7 +95,7 @@ test.storeConsumer(
 }
 ```
 
-### Logging in
+### 🔑Logging in
 
 To log in with a token:
 
@@ -131,17 +131,17 @@ test.startSession(
 }
 ```
 
-## Running the demo application
+## ▶️Running the demo application
 
-The demo application shows how to use the appambit library in a real project.
+The demo application shows how to use the appambit library in a real project.👨‍💻
 
 ### Requirements
 
-- Android Studio Arctic Fox (2020.3.1) or later
-- Android device with API 26 or higher, or an emulator.
-- AGP 8.9.2
+- Android Studio Arctic Fox (2020.3.1) or later 🦊
+- Android device with API 26 or higher, or an emulator. 📱
+- AGP 8.9.2 🔧
 
-### Steps to run the application
+### 🛠️Steps to run the application
 
 Clone the repository or download the source code 2.
 2. Open the project in Android Studio
@@ -149,7 +149,7 @@ Clone the repository or download the source code 2.
 4. Run the application on a device or emulator.
 
 
-### Functionalities of the demo application
+### 🎛️Functionalities of the demo application
 
 - Store Consumer” button: Store a consumer and get a token
 - Start Session” button: Starts a session using the obtained token
