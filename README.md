@@ -15,10 +15,6 @@ The Android library for interacting with the Appambit API. This library provides
 - Handling custom headers](#handling-custom-headers)
 
 - Running the demo-application](#running-the-demo-application)
-- Design Considerations](#design-considerations)
-- [Project structure](#project-structure)
-- Contribution](#contribution)
-- License](#license)
 
 ## Requirements
 - Android SDK minimum: API 26 (Android 8.0 Oreo)
