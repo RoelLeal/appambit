@@ -14,7 +14,7 @@ The Android library for interacting with the Appambit API. This library provides
 - [Start a session](#loggin-in)
 - [Handling custom headers](#handling-custom-headers)
 
-- [Running the demo-application](#running-the-demo-application)
+- [Running the demo application](#running-the-demo-application)
 
 ## 📌Requirements
 - Android SDK minimum: API 26 (Android 8.0 Oreo) 🍪
@@ -152,7 +152,7 @@ test.storeConsumer(consumerJson, headers) { result ->
 
 The demo application shows how to use the appambit library in a real project.👨‍💻
 
-### Requirements
+### 📌Requirements
 
 - Android Studio Arctic Fox (2020.3.1) or later 🦊
 - Android device with API 26 or higher, or an emulator. 📱
