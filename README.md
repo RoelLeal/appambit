@@ -14,7 +14,7 @@ The Android library for interacting with the Appambit API. This library provides
 - [Start a session](#logging-in)
 - [Handling custom headers](#handling-custom-headers)
 
-- [Running the demo application](#how-to-run-the-demo-application)
+- [Running the demo application](#%EF%B8%8Fhow-to-run-the-demo-application)
 
 ## 📌Requirements
 - Android SDK minimum: API 26 (Android 8.0 Oreo) 🍪
