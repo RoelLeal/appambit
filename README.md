@@ -160,7 +160,7 @@ The demo application shows how to use the appambit library in a real project.�
 
 ### 🛠️Steps to run the application
 
-Clone the repository or download the source code 2.
+1. Clone the repository or download the source code
 2. Open the project in Android Studio
 3. Make sure that the appambit library is correctly configured as a dependency.
 4. Run the application on a device or emulator.
