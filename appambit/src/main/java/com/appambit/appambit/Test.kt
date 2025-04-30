@@ -8,14 +8,33 @@ class Test {
 
     private val baseUrl = "https://staging-appambit.com/api/"
 
+    val consumerData = """
+        {
+            "app_key": "84e932d8-b9b9-4025-b574-0e411bbd86dd",
+            "device_id": "00008101-000E17360C84001E",
+            "device_model": "iPhone 16",
+            "user_id": "00008101-000E17360C84001E",
+            "os": "iOS 18.1",
+            "country": "US",
+            "language": "en"
+        }
+    """.trimIndent()
+
+    val jsonConsumer = JsonConsumer(consumerData)
+
+    val sessionData = """
+        {
+            "timestamp": "2023-01-01T00:00:00Z"
+        }
+    """.trimIndent()
+
+    val jsonSession = JsonConsumer(sessionData)
+
     fun storeConsumer(
-        consumerJson: String,
         headers: Map<String, String> = emptyMap(),
         callback: (Result<String>) -> Unit
     ) {
         try {
-            val jsonConsumer = JsonConsumer(consumerJson)
-
             NetworkService().createPost(
                 url = URL("${baseUrl}consumer"),
                 post = jsonConsumer,
@@ -38,15 +57,12 @@ class Test {
     }
 
     fun startSession(
-        body: String,
         headers: Map<String, String> = emptyMap(),
         callback: (Result<String>) -> Unit) {
 
-        val request = JsonConsumer(body)
-
         NetworkService().createPost(
             url = URL("${baseUrl}session/start"),
-            post = request,
+            post = jsonSession,
             headers = headers,
             callback = { result ->
                 result.fold(
