@@ -23,8 +23,8 @@ class Test {
                 callback = { result ->
                     result.fold(
                         onSuccess = { response ->
-                            val token = response.getToken()
-                            callback(Result.success(token))
+                            val bodyResponse = response.getAll()
+                            callback(Result.success(bodyResponse))
                         },
                         onFailure = { error ->
                             callback(Result.failure(error))
@@ -47,6 +47,7 @@ class Test {
         NetworkService().createPost(
             url = URL("${baseUrl}session/start"),
             post = request,
+            headers = headers,
             callback = { result ->
                 result.fold(
                     onSuccess = { response ->
@@ -56,8 +57,7 @@ class Test {
                         callback(Result.failure(error))
                     }
                 )
-            },
-            headers = headers
+            }
         )
     }
 

@@ -8,7 +8,7 @@ data class PostResponse(val rawResponse: String) {
     fun getToken(): String {
         return try {
             jsonObject.getString("token")
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             ""
         }
     }
@@ -16,7 +16,7 @@ data class PostResponse(val rawResponse: String) {
     fun getAll(): String {
         return try {
             jsonObject
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             ""
         }.toString()
     }
@@ -24,7 +24,7 @@ data class PostResponse(val rawResponse: String) {
     fun getSessionId(): String {
         return try {
             jsonObject.getString("session_id")
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             ""
         }
     }
