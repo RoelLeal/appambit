@@ -102,7 +102,7 @@ test.startSession(
     result.fold(
         onSuccess = { sessionResponse ->
             // Manage session response
-            println("Sesión iniciada: $sessionResponse")
+            println("Session start: $sessionResponse")
         },
         onFailure = { error ->
             //  Manage error response
